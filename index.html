@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css">
+    <title>Javascript</title>
+  </head>
+  <body>
+    <section class="container max-w-[1536px] m-auto">
+      <div class="flex flex-col gap-20 items-center justify-center pt-8 pb-8">
+        <h1 class="text-6xl flex-1 rounded-lg font-extrabold bg-slate-500 shadow-2xl p-10">The Up and Down Counter Page</h1>
+        <h2 class="text-4xl flex-1 rounded-lg font-mono shadow-2xl p-10" id="headDisplay" >The Current Counter Value is 0</h2>
+        <div class="mainCounter flex-col flex-1 flex md:flex-row gap-10 justify-center items-center ">
+            <button class="text-4xl rounded-lg font-extrabold bg-slate-500 shadow-2xl p-10" id="increment"> + </button>
+            <span class="text-4xl rounded-lg font-extrabold bg-slate-500 shadow-2xl p-10"  id="counter">0</span>
+            <button class="text-4xl rounded-lg font-extrabold bg-slate-500 shadow-2xl p-10"  id="decrement"> - </button>
+        </div>
+      </div>
+    </section>
+    <script src="counter.js"></script>
+  </body>
+</html>
