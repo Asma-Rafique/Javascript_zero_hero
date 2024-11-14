@@ -42,6 +42,8 @@ function updateDisplay() {
         setTimeout(()=> decrementbtn.classList.add('hover:shake'),10);
     }
     else{
+        decrementbtn.disabled=false;
+        decrementbtn.classList.remove('cursor-not-allowed')
         decrementbtn.classList.remove('opacity-50');
         setTimeout(()=> decrementbtn.classList.remove('hover:shake'),10);
     }
