@@ -28,7 +28,7 @@
       coffees.forEach(coffee => {
       const coffeeCard = document.createElement('div');
       coffeeCard.className = 'rounded-lg shadow-2xl p-10 hover:animate-pop';
-      coffeeCard.style="background-color: #ffe5d9; color:#6c584c;";
+      coffeeCard.style="color:#6c584c;";
   
       coffeeCard.innerHTML = `
         <img src="${coffee.image}" alt="${coffee.title}" class="w-full h-40 object-cover rounded-lg">
@@ -44,7 +44,6 @@
       container.appendChild(coffeeCard);
     });
   }
-
   async function fetchdata(url){
     try{
       let response=await fetch(url);
@@ -65,13 +64,7 @@
   let url='https://api.sampleapis.com/coffee/hot';
   let coffees= await fetchdata(url);
   console.log('coffee data : ',coffees)
-  // displayCoffees(coffees);
-  if (Array.isArray(coffees)) {
-    console.log("coreect")
-    displayCoffees(coffees);
-} else {
-    console.error("Expected an array but got:", coffees);
-}
+  displayCoffees(coffees);
   }
   catch(error){
     console.error("Theirs problem occured : ",error);

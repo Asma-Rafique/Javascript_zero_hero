@@ -36,4 +36,16 @@
   .shake {
     animation: shake 0.3s ease-in-out;
   }
+
+  #carousal {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .review {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
 }
