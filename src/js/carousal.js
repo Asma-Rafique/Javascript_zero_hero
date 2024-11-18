@@ -66,10 +66,14 @@ function slideCarousal(){
     showreview(currentindex);
     preBtn.addEventListener('click',()=>{
         currentindex=(currentindex>0)?(currentindex-1):reviewsData.length-1;
+        console.log(currentindex);
+        console.log(showreview(currentindex));
         showreview(currentindex);
     });
     nextBtn.addEventListener('click',()=>{
         currentindex=(currentindex < reviewsData.length-1)? (currentindex +1): 0;
+        console.log(currentindex);
+        console.log(showreview(currentindex));
         showreview(currentindex);
     });
 }
